@@ -1,0 +1,10 @@
+read -formal ./rast.sv
+prep -top rast_wrapper;
+hierarchy -check;
+chformal -assume -early;
+memory -nomap;
+flatten;
+async2sync;
+setundef -undriven -expose;
+sim -clock clk -reset rst -n 5 -rstlen 5 -zinit -w rast_wrapper;
+write_btor rast.btor2

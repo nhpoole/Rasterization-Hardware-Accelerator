@@ -1,0 +1,11 @@
+verif/bbx_sb.sv
+verif/clocker.sv
+verif/perf_monitor.sv
+verif/rast_driver.sv
+verif/smpl_cnt_sb.sv
+verif/smpl_sb.sv
+verif/testbench_magma.sv
+verif/top_rast_magma.sv
+verif/zbuff.sv
+magma/wrapper/rast_magma.sv
+magma/build/*.v
